@@ -10,3 +10,6 @@ const map = new mapboxgl.Map({
     includeGeometry: true,
     attributionControl: false,
 });
+
+// Add zoom and rotation controls to the map
+map.addControl(new mapboxgl.NavigationControl());
