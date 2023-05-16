@@ -28,17 +28,17 @@ function plotMarkersFromCSV(csvFileUrl) {
                 const popup = new mapboxgl.Popup({ offset: 25 })
                 .setHTML(`<div>
                             <h3>Station ID: ${marker[1]}</h3>
-                            <strong>Temperature:</strong> ${marker[5] || 'None Provided'}°C<br>
-                            <strong>Visibility:</strong> ${marker[10] || 'None Provided'} statute miles<br>
-                            <strong>Dew Point:</strong> ${marker[6] || 'None Provided'}°C<br>
-                            <strong>Weather:</strong> ${marker[21] || 'None Provided'}<br>
-                            <strong>Altimeter:</strong> ${marker[11] || 'None Provided'} inHg<br>
-                            <strong>Ceiling:</strong> ${marker[22] || 'None Provided'}<br>
-                            <strong>Wind Speed:</strong> ${marker[8] || 'None Provided'} knots<br>
-                            <strong>Wind Gust:</strong> ${marker[9] || 'None Provided'} knots<br>
-                            <strong>Wind Direction:</strong> ${marker[7] || 'None Provided'}°<br>
-                            <strong>Cloud Cover:</strong> ${marker[23] || 'None Provided'}<br>
-                            <strong>Flight Category:</strong> ${marker[30] || 'None Provided'}
+                            <strong>Temperature:</strong> ${`${marker[5]}°C` || 'None Provided'}<br>
+                            <strong>Visibility:</strong> ${`${marker[10]} statute miles` || 'None Provided'}<br>
+                            <strong>Dew Point:</strong> ${`${marker[6]}°C` || 'None Provided'}<br>
+                            <strong>Weather:</strong> ${`${marker[21]}` || 'None Provided'}<br>
+                            <strong>Altimeter:</strong> ${`${marker[11]} inHg` || 'None Provided'}<br>
+                            <strong>Ceiling:</strong> ${`${marker[22]}` || 'None Provided'}<br>
+                            <strong>Wind Speed:</strong> ${`${marker[8]} knots` || 'None Provided'}<br>
+                            <strong>Wind Gust:</strong> ${`${marker[9]} knots` || 'None Provided'}<br>
+                            <strong>Wind Direction:</strong> ${`${marker[7]}°` || 'None Provided'}<br>
+                            <strong>Cloud Cover:</strong> ${`${marker[23]}` || 'None Provided'}<br>
+                            <strong>Flight Category:</strong> ${`${marker[30]}` || 'None Provided'}
                         </div>`);
 
                 // Create a marker
